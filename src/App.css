@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+ul li{
+  color: black;
+}
+
+.textKojisePojavljujeLevo{
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  right: 27%;
+  width: 46%;
+  height: 30%;
+border-radius: 10px;
+opacity: 0.65;
+  background-color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+ 
+
+}
+.textKojisePojavljujeLevo .textSlide{
+  height: 100%;
+  width: 100%;
+  display: flex;
+align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+  
+.textKojisePojavljujeLevo{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  height: 30%;
+  border-radius: 15px;
+opacity: 0.75;
+  background-color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+  display: none;
+ 
+ 
+
+}
+.textKojisePojavljujeLevo .textSlide{
+  height: 100%;
+  width: 100%;
+  display: flex;
+align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1em;
+
+}
+ 
+} 

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.main{
+     
+    height: 92vmin;
+    width: 100%;
+    z-index:1;
+    transform: skewY(-4deg);
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+   
+  
+  
+
+}
+
+
+.isparviDiv{
+    height: 100vmin;
+    width: 100%;
+    transform: skewY(4deg);
+    background-image: url("../images/laptop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+  
+
+   
+ 
+ 
+}
+
+
+
+.textMain{
+    height: 20vmin;
+    width: 45%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: whitesmoke;
+    font-size: 2.5vmin;
+    font-weight: bold;
+
+        /* border: 1px solid red; */
+
+}
+
+.headline{
+    font-size: 2.9vmin;
+    color: #f75e5e;
+    font-weight: 500;
+    opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+
+   
+  }
+
+
