@@ -22,7 +22,7 @@ import { useState ,useEffect} from 'react';
 
 
 function Navic() {
-    const [laz,seTlaz]=useState()
+    const [laz,seTlaz]=useState(false)
     const value = useSelector(state => state.lang.value)
 
     
@@ -43,35 +43,10 @@ function Navic() {
 
     },[])
 
-    function showMenu768() {
-        const bar =document.querySelector('#bar')
-        bar.style.transform='rotate(720deg)'
-        bar.style.transformOrigin='center'
-        bar.style.transition='1200ms'
-    
-        setTimeout(() => {
-             let ul=document.querySelector('#ul')
-             ul.style.display='flex'
-             seTlaz(false)
-        }, 1200);
-       
-        
-    }
-
-    function hideMenu768() {
-        const bar =document.querySelector('#cros')
-        bar.style.transform='rotate(-720deg)'
-        bar.style.transformOrigin='center'
-        bar.style.transition='1200ms'
-    
-        setTimeout(() => {
-             let ul=document.querySelector('#ul')
-             ul.style.display='none'
-             seTlaz(true)
-        }, 1200);
-       
-        
-    }
+   const closeNavBar=()=>{
+    seTlaz(!laz)
+   }
+   
     
     
   return(
@@ -109,19 +84,20 @@ function Navic() {
 
 
 
-                  {laz ? <FaBars className={navicStyle.bar} onClick={showMenu768} id="bar" /> : <ImCross className={navicStyle.bar} onClick={hideMenu768} id="cros"/>} 
+                  {laz ? <FaBars className={navicStyle.bar} onClick={closeNavBar}  /> : <ImCross className={navicStyle.bar} onClick={closeNavBar} />} 
 
     
                 {/* Menu Bar  768px */}
 
-             
-       <div className={navicStyle.navbar768} id="ul">
-            <li className="text-warning" ><Link to="pocetna"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true} onClick={hideMenu768}>{home}</Link></li>
-            <li><Link to="services"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true}  onClick={hideMenu768}>{serv} </Link></li>
-            <li><Link to="tehnologija"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true}  onClick={hideMenu768}>{tech}</Link></li>
-            <li><Link to="projekti"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} isDynamic={true}  onClick={hideMenu768}>{projects}</Link></li>
-            <li><Link to="cene"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={600} isDynamic={true}  onClick={hideMenu768}>{prices}</Link></li>
-            <li><Link to="kontakt"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200}  delay={2000} isDynamic={true}  onClick={hideMenu768}>{contact}</Link></li>
+             {!laz ?
+
+       <div className={navicStyle.navbar768}>
+           <Link to="pocetna"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true} onClick={closeNavBar}>{home}</Link>
+           <Link to="services"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true} onClick={closeNavBar} >{serv} </Link>
+           <Link to="tehnologija"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={200} isDynamic={true} onClick={closeNavBar} >{tech}</Link>
+           <Link to="projekti"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} isDynamic={true} onClick={closeNavBar} >{projects}</Link>
+            <Link to="cene"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200} delay={600} isDynamic={true} onClick={closeNavBar} >{prices}</Link>
+            <Link to="kontakt"spy={true} smooth={true} hashSpy={true} offset={0} duration={1200}  delay={600} isDynamic={true} onClick={closeNavBar}>{contact}</Link>
 
                
          <DropdownButton size='sm' title={<ReactCountryFlag countryCode={flag} svg />}>
@@ -131,6 +107,8 @@ function Navic() {
          </DropdownButton>  
 
             </div> 
+
+            :""}
 
 
        

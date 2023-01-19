@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 .main{
      
     height: 92vmin;
@@ -8,6 +15,10 @@
     transform: skewY(-4deg);
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
+
+    
+
+    opacity: .7;
    
   
   
@@ -45,26 +56,179 @@
     justify-content: space-around;
     flex-direction: column;
     color: whitesmoke;
-    font-size: 2.5vmin;
-    font-weight: bold;
+    font-size: 2.8vmin;
+    font-weight: bolder;
 
         /* border: 1px solid red; */
 
 }
 
+
+
 .headline{
-    font-size: 2.9vmin;
-    color: #f75e5e;
-    font-weight: 500;
+    font-size: 3.8vmin;
+    color: #fc1414;
+    font-weight: bolder;
     opacity: 1;
+}
+
+.headline:hover{
+       transition: 750ms;
+        transform: scale(.95);
+        border-bottom: 2px solid #f75e5e;
+        color: white;
+        opacity: 1;
 }
 
 
 
-@media only screen and (max-width: 1000px) {
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .main {
+    
+            height: 110vmin;
+            width: 100%;
+            z-index: 1;
+            transform: skewY(-4deg);
+            font-family: 'Quicksand', sans-serif;
+            cursor: pointer;
+    
+    
+    
+    
+        }
+
+
+
+
+                .isparviDiv {
+                    height: 118vmin;
+                    width: 100%;
+                    transform: skewY(4deg);
+                    background-image: url("../images/laptop.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-attachment: fixed;
+        
+        
+        
+        
+        
+                }
+
+
+
+
+
+    .textMain {
+            height: 20vmin;
+            width: 45%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            color: whitesmoke;
+            font-size: 2.7vmin;
+            font-weight: bolder;
+    
+            /* border: 1px solid red; */
+    
+        }
+    
+        .headline {
+            font-size: 4vmin;
+            color: #f75e5e;
+            font-weight: bolder;
+            opacity: 1;
+        }
 
 
    
+  }
+
+
+
+
+
+
+  @media only screen and (max-width:600px) {
+
+
+      .main {
+
+          height: 120vmin;
+          width: 100%;
+          z-index: 1;
+          transform: skewY(-4deg);
+          font-family: 'Quicksand', sans-serif;
+          cursor: pointer;
+
+
+
+
+      }
+
+
+
+
+      .isparviDiv {
+          height: 128vmin;
+          width: 100%;
+          transform: skewY(4deg);
+          background-image: url("../images/laptop.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-attachment: fixed;
+
+
+
+
+
+      }
+
+
+
+
+
+      .textMain {
+          height: 20vmin;
+          width: 45%;
+          z-index: 1;
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: space-around;
+          flex-direction: column;
+          color: whitesmoke;
+          font-size: 3.5vmin;
+          font-weight: bolder;
+
+          /* border: 1px solid red; */
+
+      }
+
+      .headline {
+          font-size: 5vmin;
+          color: #f75e5e;
+          font-weight: bolder;
+          opacity: 1;
+      }
+
+
+
   }
 
 

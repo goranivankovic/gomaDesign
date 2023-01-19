@@ -39,7 +39,7 @@
 
 .firstDiv{
     height: 30vmin;
-    width: 65%;
+    width: 60%;
     transform: skewY(4deg);
     display: flex;
     align-items:center;
@@ -64,7 +64,7 @@
 
 .secondDiv{
     height: 30vmin;
-    width: 65%;
+    width: 60%;
     transform: skewY(4deg);
     display: flex;
     align-items: center;
@@ -112,10 +112,241 @@
 }
 
 
+
+
 @media only screen and (max-width: 768px) {
+
+
+
+
+    .main {
+    
+            height: 155vmin;
+            width: 100%;
+            z-index: 3;
+            transform: skewY(-4deg);
+            font-family: 'Quicksand', sans-serif;
+            cursor: pointer;
+            background-color: whitesmoke;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: lightslategray;
+            color: white;
+    
+    
+    
+        }
+
+
+
+
+    .firstDiv {
+            height: 55vmin;
+            width: 60%;
+            transform: skewY(4deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+    
+            /* border: 1px solid red; */
+    
+    
+        }
+
+
+
+                .secondDiv {
+                       height: 55vmin;
+                        width: 60%;
+                        transform: skewY(4deg);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+        
+                    /* border: 1px solid red; */
+        
+                }
+
+
+
+    
+        .firstDiv_items {
+            height: 42%;
+            width: 42%;
+    
+            /* border: 1px solid red;  */
+    
+        }
+
+
+
+                .secondDiv_items {
+        
+                    height: 42%;
+                        width: 42%;
+        
+                }
+
+
+
+
+
+
+
+    .footerDiv {
+            height: 15vmin;
+            width: 90%;
+            transform: skewY(4deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5vmin;
+            text-align: center;
+    
+            /* border: 1px solid red; */
+    
+    
+        }
     
 
  
+  }
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 600px) {
+
+
+
+
+      .main {
+
+          height: 255vmin;
+          width: 100%;
+          z-index: 3;
+          transform: skewY(-4deg);
+          font-family: 'Quicksand', sans-serif;
+          cursor: pointer;
+          background-color: whitesmoke;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          background-color: lightslategray;
+          color: white;
+
+
+
+      }
+
+
+          .headline {
+              height: 15vmin;
+              width: 100%;
+              transform: skewY(4deg);
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-around;
+              font-size: 4vmin;
+    
+              /* border: 1px solid red; */
+    
+          }
+
+
+
+
+      .firstDiv {
+          height: 105vmin;
+          width: 70%;
+          transform: skewY(4deg);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          flex-wrap: wrap;
+       
+
+
+          /* border: 1px solid red; */
+
+
+      }
+
+
+
+      .secondDiv {
+          height: 105vmin;
+          width: 70%;
+          transform: skewY(4deg);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        flex-wrap: wrap;
+    
+
+          /* border: 1px solid red; */
+
+      }
+
+
+
+
+      .firstDiv_items {
+        height: 42%;
+            width: 42%;
+
+          /* border: 1px solid red;  */
+
+      }
+
+
+
+      .secondDiv_items {
+
+          height: 42%;
+          width: 42%;
+
+      }
+
+
+
+
+
+
+
+      .footerDiv {
+          height: 15vmin;
+          width: 80%;
+          transform: skewY(4deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2.8vmin;
+          text-align: center;
+
+          /* border: 1px solid red; */
+
+
+      }
+
+
+
   }
 
 
