@@ -4,17 +4,24 @@ import { useSelector } from 'react-redux';
 import projectStyles from '../../styles/Project.module.css'
 
 
-
-import laptop from '../../images/laptop.jpg'
-import stadium from '../../images/stadum.jpg'
-import fashion from '../../images/fashion.jpg'
-import coding from '../../images/coding.jpg'
-import weather from '../../images/weather.jpeg'
 import movies from '../../images/movies.jpeg'
-import crypto from '../../images/crypto.png'
-import restoran from '../../images/restoran.jpeg'
-import singup from '../../images/singup.png'
+import blog from '../../images/blog.png'
+import weather from '../../images/weather.jpeg'
 import freedom from '../../images/freedom.jpg'
+
+
+import fit from '../../images/fit.png'
+import wcApi from '../../images/wc-api.png'
+import shop from '../../images/shop.png'
+import laptop from '../../images/laptop.jpg'
+
+
+
+
+
+
+
+
 
 
 
@@ -47,7 +54,7 @@ export default function Projects() {
 
        <div className={projectStyles.firstDiv}>
 
-         <a href='https://react-movie-app-goga.netlify.app/'
+         <a href='https://nscoder-movie.netlify.app/'
          target="_blank"
           className={projectStyles.firstDiv_items} >
              <img src={movies} alt="movies" 
@@ -56,16 +63,16 @@ export default function Projects() {
                onMouseLeave={resize100}
                /></a> 
 
-         <a href='https://goran-crypto.vercel.app/'
+         <a href='https://nscoder-blog.vercel.app/'
          target="_blank"
           className={projectStyles.firstDiv_items}>
-             <img src={crypto} alt="movies" 
+             <img src={blog} alt="movies" 
         
                onMouseOver={resize95}
                onMouseLeave={resize100}
               /></a> 
 
-         <a href='https://royal-weather.netlify.app/'
+         <a href='https://nscoder-weather.netlify.app/'
          target="_blank"
           className={projectStyles.firstDiv_items}>
              <img src={weather} alt="movies"
@@ -74,7 +81,7 @@ export default function Projects() {
                onMouseLeave={resize100}
                /></a> 
 
-         <a href='https://freedombike.co/'
+         <a href='https://freedombike.netlify.app/'
          target="_blank"
           className={projectStyles.firstDiv_items}>
              <img src={freedom} alt="movies" 
@@ -100,34 +107,34 @@ export default function Projects() {
        <div className={projectStyles.secondDiv}>
 
 
-       <a href='https://goga-login.herokuapp.com/'
+       <a href='https://nscoder-fit.netlify.app/'
        target="_blank"
         className={projectStyles.secondDiv_items}>
-           <img src={singup} alt="movies" 
+           <img src={fit} alt="movies" 
      
             onMouseOver={resize95}
             onMouseLeave={resize100}
              /></a> 
 
-       <a href='http://www.football-api.uk/'
+       <a href='http://nscoder-wc-api.vercel.app/'
        target="_blank"
         className={projectStyles.secondDiv_items}>
-           <img src={stadium} alt="movies" 
+           <img src={wcApi} alt="movies" 
          
             onMouseOver={resize95}
             onMouseLeave={resize100}
             /></a> 
 
-       <a href='https://mern-goga.herokuapp.com/'
+       <a href='https://nscoder-shop.netlify.app/'
        target="_blank"
         className={projectStyles.secondDiv_items}>
-           <img src={coding} alt="movies" 
+           <img src={shop} alt="movies" 
          
             onMouseOver={resize95}
             onMouseLeave={resize100}
             /></a> 
 
-      <a href='https://next-js-football-project.vercel.app/' 
+      <a href='https://gomadesign.netlify.app/' 
       target="_blank"
       className={projectStyles.secondDiv_items}>
           <img src={laptop} alt="movies" 

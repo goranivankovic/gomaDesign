@@ -33,6 +33,8 @@
     background-image: url("../images/laptop.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +169,7 @@
 
       .main {
 
-          height: 120vmin;
+          height: 95vmax;
           width: 100%;
           z-index: 1;
           transform: skewY(-4deg);
@@ -183,10 +185,11 @@
 
 
       .isparviDiv {
-          height: 128vmin;
+          height: 103vmax;
           width: 100%;
           transform: skewY(4deg);
           background-image: url("../images/laptop.jpg");
+            background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
           display: flex;
@@ -214,7 +217,7 @@
           justify-content: space-around;
           flex-direction: column;
           color: whitesmoke;
-          font-size: 3.5vmin;
+          font-size: 3.6vmin;
           font-weight: bolder;
           text-align: center;
 
@@ -223,7 +226,7 @@
       }
 
       .headline {
-          font-size: 5vmin;
+          font-size: 5.1vmin;
           color: #f75e5e;
           font-weight: bolder;
           opacity: 1;
